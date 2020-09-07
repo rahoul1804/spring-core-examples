@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p" xsi:schemaLocation="http://www.springframework.org/schema/beans  
+ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+ 
+ <bean id="adD" class="org.byConstructor.Vehicle2_Details">  
+<constructor-arg value="punjab"></constructor-arg>  
+<constructor-arg value="manjeet"></constructor-arg>  
+</bean>  
+
+<bean id="vv" class="org.byConstructor.Vehicle2" autowire="constructor">  
+<constructor-arg value="12542" type="int"></constructor-arg>  
+<constructor-arg value="Benz"></constructor-arg>  
+<!-- <constructor-arg> 
+ 
+<ref bean="adD"/>  
+</constructor-arg>  --> 
+</bean>
+
+ 
+ </beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p" xsi:schemaLocation="http://www.springframework.org/schema/beans  
+ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+ 
+ <bean id="ved" class="setter_Injection_with_Dependent_Object.Vehicle_Details" >
+ <property name="StatebelongsTo" value="punjab"></property>
+ <property name="OwnerName" value="Manjeet"></property>
+ </bean>
+ 
+ <bean id="veh" class="setter_Injection_with_Dependent_Object.Vehicle1" >
+ <property name="number" value="12345"></property>
+ <property name="name" value="Benz"></property>
+  <property name="vd" ref="ved"></property>
+ </bean>
+ 
+ </beans>
